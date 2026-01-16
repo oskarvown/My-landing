@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askar Kurbangulov - Full-Stack Digital Marketer & Automation Expert</title>
+    <meta name="description" content="Full-Stack Digital Marketer & Automation Expert. Строю масштабируемые системы продаж: от трафика и комьюнити до AI-ботов, CRM и голосовой телефонии.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['DM Sans', 'system-ui', 'sans-serif'],
+                        'heading': ['Montserrat', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        },
+                        accent: {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Global Styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'DM Sans', system-ui, sans-serif;
+            font-weight: 400;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', system-ui, sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-weight: 800;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Smooth transitions */
+        button, a, input, select, textarea {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        /* Gradient backgrounds */
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Glass effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Hover effects */
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+        
+        /* Focus styles */
+        .focus-ring:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+        
+        /* Scroll indicator animation */
+        @keyframes scroll-hint {
+            0%, 100% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(8px);
+                opacity: 1;
+            }
+        }
+        
+        .animate-scroll-hint {
+            animation: scroll-hint 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <div id="root"></div>
+    
+    <!-- React CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel Standalone for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Component Scripts -->
+    <script type="text/babel" src="src/components/ui/Button.jsx"></script>
+    <script type="text/babel" src="src/components/ui/Card.jsx"></script>
+    <script type="text/babel" src="src/components/ui/Badge.jsx"></script>
+    <script type="text/babel" src="src/components/Navbar.jsx"></script>
+    <script type="text/babel" src="src/components/Footer.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Hero.jsx"></script>
+    <script type="text/babel" src="src/components/sections/About.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Services.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Experience.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Portfolio.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Pricing.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Process.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Guarantees.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Testimonials.jsx"></script>
+    <script type="text/babel" src="src/components/sections/FAQ.jsx"></script>
+    <script type="text/babel" src="src/components/sections/Contact.jsx"></script>
+    <script type="text/babel" src="src/components/Home.jsx"></script>
+    <script type="text/babel" src="src/main.jsx"></script>
+</body>
+</html>
